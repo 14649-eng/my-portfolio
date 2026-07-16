@@ -1,0 +1,57 @@
+/* สีหลัก */
+:root {
+  --blue: #2196F3;
+  --red: #F44336;
+  --white: #FFFFFF;
+}
+
+/* พื้นหลัง */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--white);
+  color: #333;
+}
+
+/* ส่วนหัว */
+header {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+}
+
+/* ปุ่ม */
+button {
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #d32f2f;
+}
+
+/* กล่องเนื้อหา */
+.card {
+  background: var(--white);
+  border: 2px solid var(--blue);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ลิงก์ */
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--red);
+}
