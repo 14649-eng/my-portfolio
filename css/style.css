@@ -1,57 +1,69 @@
-/* สีหลัก */
 :root {
-  --blue: #2196F3;
-  --red: #F44336;
-  --white: #FFFFFF;
+  --primary: #0D6EFD;  
+  --secondary: #DC3545;
+  --light: #FFFFFF;     
+  --dark: #212529;
 }
 
-/* พื้นหลัง */
-body {
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: var(--white);
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* ส่วนหัว */
-header {
-  background-color: var(--blue);
-  color: var(--white);
-  padding: 20px;
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--dark);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: var(--light);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+}
+
+h1 {
+  color: var(--primary);
   text-align: center;
+  margin-bottom: 20px;
 }
 
-/* ปุ่ม */
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
 button {
-  background-color: var(--red);
-  color: var(--white);
+  background: var(--secondary);
+  color: var(--light);
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 button:hover {
-  background-color: #d32f2f;
+  background: var(--primary);
+  transform: translateY(-2px);
 }
 
-/* กล่องเนื้อหา */
-.card {
-  background: var(--white);
-  border: 2px solid var(--blue);
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* ลิงก์ */
 a {
-  color: var(--blue);
+  color: var(--primary);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--red);
+  color: var(--secondary);
+}
+
+footer {
+  text-align: center;
+  color: var(--light);
+  margin: 20px 0;
 }
